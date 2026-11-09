@@ -1,0 +1,36 @@
+{
+  "cli": {
+    "version": ">= 24.13.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://YOUR-BACKEND-URL",
+        "EAS_BUILD_NO_EXPO_GO_WARNING": "true"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "apk",
+        "release": {
+          "keystorePath": "android/app/derma-release-keystore.jks",
+          "keystorePassword": "your_keystore_password",
+          "keyAlias": "derma-ai",
+          "keyPassword": "your_key_password"
+        }
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

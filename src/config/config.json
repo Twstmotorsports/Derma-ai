@@ -1,0 +1,31 @@
+{
+  "app_name": "Derma AI",
+  "api_url": null,
+  "use_mock": false,
+  "detection_threshold": 0.4,
+  "max_image_side": 1024,
+  "supported_age_groups": [
+    "Piglet",
+    "Weaner",
+    "Grower",
+    "Finisher",
+    "Sow",
+    "Boar"
+  ],
+  "supported_signs": [
+    "itching_rubbing",
+    "redness",
+    "scabs_crusts",
+    "greasy_skin",
+    "blisters_pustules",
+    "loss_of_appetite",
+    "lethargy",
+    "fever"
+  ],
+  "disease_classes": [
+    "Healthy Skin",
+    "Exudative Epidermitis",
+    "Sarcoptic Mange",
+    "Swine Pox"
+  ]
+}

@@ -1,22 +1,49 @@
 {
   "expo": {
-    "name": "derma-ai",
+    "name": "Derma AI",
     "slug": "derma-ai",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.svg",
     "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
+    "scheme": "derma-ai",
+    "plugins": [
+      "expo-camera",
+      "expo-image-picker",
+      "expo-image-manipulator",
+      "expo-notifications",
+      "expo-location"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "runtimeVersion": {
+      "policy": "nativeVersion"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#1B5E20",
+        "foregroundImage": "./assets/adaptive-icon.png"
       },
-      "predictiveBackGestureEnabled": false
+      "package": "com.dermaai.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "enableHermes": true
+    },
+    "ios": {
+      "supportsTablet": true,
+      "permissions": [
+        "CAMERA",
+        "PHOTOS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
